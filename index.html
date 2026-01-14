@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Knock-Knock</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body { 
+        margin: 0; 
+        overflow: hidden; 
+        background-color: #FFD8EC; 
+        touch-action: none; 
+        user-select: none; 
+        -webkit-user-select: none;
+        /* cursor: none; Removed to allow dynamic control */
+      }
+      .cursor-hidden {
+        cursor: none;
+      }
+      #root { width: 100vw; height: 100vh; }
+      @keyframes crack {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+      }
+      .animate-crack {
+        animation: crack 0.1s ease-in-out;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.5.0",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
+    "zustand": "https://esm.sh/zustand@^5.0.10",
+    "three": "https://esm.sh/three@^0.182.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/KNOCK/assets/index-Dxn84Alv.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
